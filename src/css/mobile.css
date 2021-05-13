@@ -1,0 +1,132 @@
+/*
+Modificaciones de los estilos para dispositivos tipo móvil
+*/
+
+@media only screen and (max-width:480px) {
+
+    body {
+        background-image: url('../images/build/400/fondo-400.jpg');
+    }
+
+    .font-big {
+        font-size: 20px;
+    }
+
+/* Estilos de index */
+
+    .index-bloque-logo {
+        margin: 2rem 0;
+        font-size: 40px;
+        line-height: 35px;
+        display: grid;
+        grid-template-areas: "logo all"
+                             "logo american"
+                             "logo menu";
+    }
+
+    .index-logo-image {
+        grid-area: logo;
+    }
+
+    .index-logo-word {
+        font-size: 40px;
+    }
+
+    .index-logo-word-all {
+        grid-area: all;
+    }
+
+    .index-logo-word-american {
+        grid-area: american;
+    }
+
+    .index-logo-word-menu {
+        grid-area: menu;
+    }
+
+    .index-bloque-enlace {
+        width: 80vw;
+        margin: 0.5rem auto;
+        height: auto;
+        padding-bottom: 0.5rem;
+    }
+
+    .index-bloque-enlace-img {
+        width: 80%;
+        display: block;
+        margin: 0.5rem auto;
+    }
+
+/* Estilos de la cabecera */
+
+    .header-link {
+        display: grid;
+        grid-template-areas: "logo all"
+                             "logo american"
+                             "logo menu";
+    }
+
+    .header-logo-image {
+        grid-area: logo;
+    }
+
+    .header-logo-all {
+        grid-area: all;
+    }
+
+    .header-logo-american {
+        grid-area: american;
+    }
+
+    .header-logo-menu {
+        grid-area: menu;
+    }
+
+    .header-menu {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-menu-item {
+        width: 100%;
+    }
+
+    .header-menu-link-wrapper::after {
+        content: none;
+    }
+
+/* Estilos para el pie */
+
+    .footer-logo {
+        height: 50px;
+    }
+
+/* Estilo de la pagina presentacion */
+
+    .presentacion {
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    .presentacion-media {
+        width: 80%;
+        height: auto;
+    }
+
+/* Estilos de la lista de recetas */
+
+    .plato-image {
+        width: 90%;
+        height: auto;
+    }
+
+/* Estilos para las recetas */
+
+    .receta {
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    .receta-image {
+        width: 80%;
+        height: auto;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <include src="partials/html_head.html"></include>
+    <title>Brownie</title>
+</head>
+<body>
+    <include src="partials/header.html"></include>
+    <article>
+        <section class="receta">
+            <h2 class="section-heading font-lobster font-big blue">Brownie</h2>
+            <div class="row">
+                <picture class="receta-main-image">
+                    <source media="(max-width: 480px)" srcset="images/build/400/brownie-400.jpg">
+                    <source media="(min-width: 481px) and (max-width:800px)" srcset="images/burger-receta-main-800.jpg">
+                    <source media="(min-width: 801px)" srcset="images/brownie-receta-main-1000.jpg">
+                    <img alt="imagen de un brownie en un plato"
+                        src="images/build/200/brownie-200.jpg">
+                </picture>
+            </div>
+            <div class="row">
+                <div class="col receta-copy">
+                    <h3 class="receta-subheading">Ingredientes</h3>
+                    <ul class="ingredientes">
+                        <li>225g de chocolate puro</li>
+                        <li>170g de harina</li>
+                        <li>170g de mantequilla</li>
+                        <li>250g de azúcar</li>
+                        <li>100g de nueces peladas</li>
+                        <li>60g de cacao en polvo</li>
+                        <li>2 cucharaditas de vainilla</li>
+                        <li>2 huevos</li>
+                        <li>sal</li>
+                    </ul>
+                    <h3 class="receta-subheading">Preparación</h3>
+                    <ol class="preparacion">
+                        <li>Trocear el chocolate en trozos muy pequeños</li>
+                        <li>Reservar una mitad y la otra fundirla en el microondas (3 veces, de 10 a 15 segundos)</li>
+                        <li>Fundir la mantequilla en el microondas en golpes de 10 a 15 segundos</li>
+                        <li>Incorporar el azúcar a la mantequilla y mezclar hasta que quede una masa homogénea</li>
+                        <li>Añadir el huevo y la vainilla y continuar mezclando</li>
+                        <li>Incorporar el chocolate que se había reservado y continuar mezclando</li>
+                        <li>Trocear las nueces gruesas, incorporarlas a la masa y seguir mezclando</li>
+                        <li>Preparar un molde con papel vegetal y extender la masa en el recipiente</li>
+                        <li>Calentar en el horno a 180º con calor arriba y abajo dirante 20 ó 25 minutos</li>
+                        <li>Sacar del horno y dejar enfriar durante 10 minutos</li>
+                        <li>Una vez frio, servir cubierto con el chocolate fundido</li>
+                    </ol>
+                </div>
+                <div class="col flex-column flex-centered">
+                    <img 
+                        class="receta-image" 
+                        src="images/build/400/brownie-1-400.jpg" 
+                        alt="imagen de trozos de chocolate" 
+                        srcset="images/build/200/brownie-1-200.jpg 200w,
+                                images/build/400/brownie-1-400.jpg 400w,
+                                images/build/600/brownie-1-600.jpg 600w,
+                                images/build/800/brownie-1-800.jpg 800w"
+                        sizes="(max-width:480px) 230px,
+                                (max-width:1024px) 590px,
+                                450px"
+                    />
+                    <img 
+                        class="receta-image" 
+                        src="images/build/400/brownie-400.jpg" 
+                        alt="imagen de nueces peladas" 
+                        srcset="images/build/200/brownie-2-200.webp 200w,
+                                images/build/400/brownie-2-400.webp 400w,
+                                images/build/600/brownie-2-600.webp 600w,
+                                images/build/800/brownie-2-800.webp 800w"
+                        sizes="(max-width:480px) 230px,
+                                (max-width:1024px) 590px,
+                                450px"
+                    />
+                    <img 
+                        class="receta-image" 
+                        src="images/build/400/brownie-3-400.jpg" 
+                        alt="imagen de chocolate fundido" 
+                        srcset="images/build/200/brownie-3-200.webp 200w,
+                                images/build/400/brownie-3-400.webp 400w,
+                                images/build/600/brownie-3-600.webp 600w,
+                                images/build/800/brownie-3-800.webp 800w"
+                        sizes="(max-width:480px) 230px,
+                                (max-width:1024px) 590px,
+                                450px"
+                    />
+                </div>
+            </div>
+            <div class="enlaces-otras-recetas flex-row">
+                <div>
+                    <a class="font-lobster font-big blue" href="costillas.html"><i class="fa fa-chevron-left"></i>Receta anterior</a>
+                </div>
+            </div>
+        </section>
+    </article>
+    <include src="partials/footer.html"></include>
+</body>
+</html>

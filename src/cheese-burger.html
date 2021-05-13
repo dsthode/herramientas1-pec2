@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <include src="partials/html_head.html"></include>
+    <title>Cheese burger</title>
+</head>
+<body>
+    <include src="partials/header.html"></include>
+    <article>
+        <section class="receta">
+            <h2 class="section-heading font-lobster font-big blue">Hamburguesa con queso</h2>
+            <div class="row">
+                <picture class="receta-main-image">
+                    <source media="(max-width: 480px)" srcset="images/build/400/burger-400.jpg">
+                    <source media="(min-width: 481px) and (max-width:800px)" srcset="images/burger-receta-main-800.jpg">
+                    <source media="(min-width: 801px)" srcset="images/burger-receta-main-1000.jpg">
+                    <img alt="imagen de una hamburguesa preparada"
+                        src="images/build/200/burger-200.jpg">
+                </picture>
+            </div>
+            <div class="row">
+                <div class="col receta-copy">
+                    <h3 class="receta-subheading">Ingredientes</h3>
+                    <ul class="ingredientes">
+                        <li>350g de carne de ternera</li>
+                        <li>1 yema de huevo</li>
+                        <li>1 cucharadita de mostaza de Dijon</li>
+                        <li>1 cucharada de salsa Perrins</li>
+                        <li>una pizca de pimienta negra molida</li>
+                        <li>una pizca de sal</li>
+                        <li>unas hojas de lechuga</li>
+                        <li>unas rodajas de tomate</li>
+                        <li>unas anillas de cebolla</li>
+                        <li>unas rodajas de pepinillo</li>
+                        <li>1 ó 2 lonchas de queso</li>
+                        <li>ketchup</li>
+                        <li>mayonesa</li>
+                        <li>2 panecillos de hamburguesa</li>
+                    </ul>
+                    <h3 class="receta-subheading">Preparación</h3>
+                    <ol class="preparacion">
+                        <li>Poner la carne en un plato hondo</li>
+                        <li>Añadir la yema de huevo, la mostaza, la salsa Perrins, la pimienta y la sal</li>
+                        <li>Remover todo hasta que se mezclen bien todos los ingredientes</li>
+                        <li>Separar la carne en dos partes y formar los filetes</li>
+                        <li>Asar las hamburguesas en la barbacoa</li>
+                        <li>Colocar las hamburguesas en los panecillos y poner encima de cada filete una loncha de queso</li>
+                        <li>Aderezar con ketchup, mayonesa, pepinillos, tomate y lechuga</li>
+                    </ol>
+                </div>
+                <div class="col flex-column flex-centered">
+                    <img 
+                        class="receta-image" 
+                        src="images/build/400/burger-1-400.jpg" 
+                        alt="filetes crudos de hamburguesa" 
+                        srcset="images/build/200/burger-1-200.jpg 200w,
+                                images/build/400/burger-1-400.jpg 400w,
+                                images/build/600/burger-1-600.jpg 600w,
+                                images/build/800/burger-1-800.jpg 800w"
+                        sizes="(max-width:480px) 230px,
+                               (max-width:1024px) 590px,
+                               450px"
+                    />
+                    <img 
+                        class="receta-image" 
+                        src="images/build/400/burger-2-400.jpg" 
+                        alt="panecillos de hamburguesa" 
+                        srcset="images/build/200/burger-2-200.webp 200w,
+                                images/build/400/burger-2-400.webp 400w,
+                                images/build/600/burger-2-600.webp 600w,
+                                images/build/800/burger-2-800.webp 800w"
+                        sizes="(max-width:480px) 230px,
+                                (max-width:1024px) 590px,
+                                450px"
+                      />
+                    <img 
+                        class="receta-image" 
+                        src="images/build/400/burger-3-400.jpg" 
+                        alt="hamburguesas en la barbacoa" 
+                        srcset="images/build/200/burger-3-200.webp 200w,
+                                images/build/400/burger-3-400.webp 400w,
+                                images/build/600/burger-3-600.webp 600w,
+                                images/build/800/burger-3-800.webp 800w"
+                        sizes="(max-width:480px) 230px,
+                                (max-width:1024px) 590px,
+                                450px"
+                      />
+                </div>
+            </div>
+            <div class="enlaces-otras-recetas flex-row">
+                <div>&nbsp;</div>
+                <div>
+                    <a class="font-lobster font-big blue" href="costillas.html">Receta siguiente<i class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </article>
+    <include src="partials/footer.html"></include>
+</body>
+</html>

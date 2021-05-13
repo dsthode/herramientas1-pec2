@@ -1,0 +1,30 @@
+{
+  "name": "pec2",
+  "version": "1.0.0",
+  "description": "Práctica 2 de la asignatura de Herramientas HTML y CSS I",
+  "main": "index.js",
+  "scripts": {
+    "parcel:dev": "parcel --hmr-port 33999 src/index.html",
+    "parcel:build": "parcel build src/index.html",
+    "clean": "rimraf dist .cache .cache-loader",
+    "dev": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean htmlvalidate parcel:build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "htmlvalidate": "node_modules/.bin/html-validate src/**/*.html"
+  },
+  "author": "Damián Serrano Thode",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "autoprefixer": "^9.8.6",
+    "html-validate": "^4.11.0",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-imagemin": "^4.0.2",
+    "posthtml": "^0.15.1",
+    "posthtml-include": "^1.7.0",
+    "responsive-images-resizer": "^1.1.9",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {}
+}

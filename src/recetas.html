@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <include src="partials/html_head.html"></include>
+    <title>Categoría</title>
+</head>
+<body>
+    <include src="partials/header.html"></include>
+    <article class="recetas">
+
+        <section class="recetas-plato red-bg">
+            <h2 class="recetas-title font-lobster">Recetas</h2>
+            <p class="recetas-header font-big white">A continuación presentamos algunas de las recetas más famosas de la cocina americana.</p>
+            <p class="recetas-header font-big white">Se ofrecen tres platos para preparar un delicioso menú, y pulsando en cada uno de ellos se puede consultar la receta de preparación.</p>
+        </section>
+
+        <section class="recetas-plato red-bg">
+            <h2 class="plato-heading blue-bg"><span>Primer plato</span></h2>
+            <div class="row">
+                <div class="col">
+                    <div class="plato-copy white font-big blue-bg">
+                        <p><i class="fa fa-chevron-down"></i></p>
+                        <p><a class="plato-enlace" href="cheese-burger.html">Una deliciosa hamburguesa con queso al más puro estilo americano</a></p>
+                        <p><i class="fa fa-chevron-up"></i></p>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href="cheese-burger.html">
+                        <img 
+                            class="plato-image" 
+                            src="images/build/400/burger-400.jpg" 
+                            alt="imagen de una hamburguesa preparada" 
+                            srcset="images/build/200/burger-200.jpg 200w,
+                                    images/build/400/burger-400.jpg 400w,
+                                    images/build/600/burger-600.jpg 600w,
+                                    images/build/800/burger-800.jpg 800w"
+                            sizes="(max-width:480px) 230px,
+                                    (max-width:1024px) 590px,
+                                    450px"
+                             />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="recetas-plato red-bg">
+            <h2 class="plato-heading blue-bg"><span>Segundo plato</span></h2>
+            <div class="row">
+                <div class="col">
+                    <a href="costillas.html">
+                        <img 
+                            class="plato-image" 
+                            src="images/build/400/costillas-400.jpg" 
+                            alt="imagen de un plato de costillas" 
+                            srcset="images/build/200/costillas-200.jpg 200w,
+                                    images/build/400/costillas-400.jpg 400w,
+                                    images/build/600/costillas-600.jpg 600w,
+                                    images/build/800/costillas-800.jpg 800w"
+                            sizes="(max-width:480px) 230px,
+                                    (max-width:1024px) 590px,
+                                    450px"
+                             />
+                    </a>
+                </div>
+                <div class="col">
+                    <div class="plato-copy white font-big blue-bg">
+                        <p><i class="fa fa-chevron-down"></i></p>
+                        <p><a href="costillas.html" class="plato-enlace">Las auténticas costillas a la brasa con salsa barbacoa</a></p>
+                        <p><i class="fa fa-chevron-up"></i></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recetas-plato red-bg">
+            <h2 class="plato-heading blue-bg"><span>Postre</span></h2>
+            <div class="row">
+                <div class="col">
+                    <div class="plato-copy white font-big blue-bg">
+                        <p><i class="fa fa-chevron-down"></i></p>
+                        <p><a class="plato-enlace" href="brownie.html">Y para terminar, el clásico brownie con chocolate fundido</a></p>
+                        <p><i class="fa fa-chevron-up"></i></p>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href="brownie.html">
+                        <img 
+                            class="plato-image" 
+                            src="images/build/400/brownie-400.jpg" 
+                            alt="imagen de un brownie en un plato" 
+                            srcset="images/build/200/brownie-200.jpg 200w,
+                                    images/build/400/brownie-400.jpg 400w,
+                                    images/build/600/brownie-600.jpg 600w,
+                                    images/build/800/brownie-800.jpg 800w"
+                            sizes="(max-width:480px) 230px,
+                                    (max-width:1024px) 590px,
+                                    450px"
+                              />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </article>
+    <include src="partials/footer.html"></include>
+</body>
+</html>

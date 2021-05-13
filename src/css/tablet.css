@@ -1,0 +1,78 @@
+/*
+Modificaciones de los estilos para los dispositivos tipo tablet
+*/
+
+@media only screen and (max-width:1024px) {
+
+    body {
+        background-image: url('../images/build/600/fondo-600.jpg');
+    }
+
+    article {
+        width: 90vw;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .font-big {
+        font-size: 25px;
+    }
+
+/* Estilos de index */
+
+    main {
+        width: 100%;
+        height: initial;
+        margin-bottom: 3rem;
+    }
+    
+    .index-bloque-logo {
+        margin-top: 2rem;
+    }
+    
+    .index-bloques {
+        flex-direction: column;
+    }
+
+    .index-logo-word {
+        font-size: 80px;
+    }
+
+    .index-bloque-enlace {
+        margin: 2rem;
+    }
+
+/* Estilos de la cabecera */
+
+    header {
+        width: 90%;
+    }
+
+    .main-title {
+        font-size: 60px;
+    }
+
+/* Estilos del pie */
+
+    footer {
+        width: 90%;
+    }
+
+/* Estilos de lista de recetas */
+
+    .recetas-plato {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .plato-copy {
+        height: auto;
+        margin: 1rem 0 1rem 0;
+    }
+}
