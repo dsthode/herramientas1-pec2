@@ -106,6 +106,8 @@ Para el formato responsive de las imágenes he usado el elemento ```<img>``` con
 
 Un detalle que me hizo perder tiempo fue que en las pruebas estaba usando el simulador de diseño adaptable del navegador y en las pruebas que estaba haciendo con un dispositivo móvil con pantalla de 360px me estaba descargando la versión de 800px de la imagen. Tras hacer varias pruebas me di cuenta de que la relación de *device to pixel ratio* (DPR) del disporitivo era 4, por lo que para el navegador implicaba una pantalla de 1440px, lo que explicaba por qué estaba descargando la imagen de 800px. Configuré un dispositivo nuevo con un DPR de 1 y un ancho de 240px y ya pude ver como se descargaba la versión de 200px de la imagen.
 
+El fondo de las páginas también se ha generado en distintos anchos de 200px a 800px y se sirve cada uno para el tipo de pantalla correspondiente, mediante *media queries* en los archivos CSS de cada tipo de pantalla.
+
 ## Aplicación de las imágenes SVG
 
 En la cabecera de la página, como he explicado anteriormente, estoy usando una imagen en formato SVG si este está soportado por el navegador (si no, usaría el formato PNG). E igualmente, en el pie he incluido el logo redondo en formato SVG y PNG.
@@ -138,8 +140,12 @@ Adicionalmente, he incluido un *favicon* en la página en dos formatos, en SVG y
 <link rel="icon" type="image/png" href="images/icon.png">
 ```
 
+# Validación de las páginas
+
+https://www.accessi.org
+
 # Enlaces
 
-La página web puede consultarse en la siguiente dirección: [https://pensive-raman-c3fbb8.netlify.app/](https://pensive-raman-c3fbb8.netlify.app/).
+La página web puede consultarse en la siguiente dirección: [https://laughing-allen-4aee0b.netlify.app/](https://laughing-allen-4aee0b.netlify.app/).
 
 Y el repositorio donde está alojado el código fuente de la página es el siguiente: [https://github.com/dsthode/herramientas1-pec2](https://github.com/dsthode/herramientas1-pec2).
