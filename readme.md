@@ -142,7 +142,25 @@ Adicionalmente, he incluido un *favicon* en la página en dos formatos, en SVG y
 
 # Validación de las páginas
 
-https://www.accessi.org
+Para la validación del código HTML de las páginas web desarrolladas en la práctica he usado el módulo de NPM ```html-validate```, el cual realiza una validación de la correcta utilización de las etiquetas HTML. De este modo he podido resolver los problemas de semántica que presentaba la primera práctica y que llegaron a producción sin ser detectados.
+
+Mediante este paquete, se configura una acción más en los scripts de ```package.json``` para realizar una validación del código en el *build* de producción, como se puede observar en las acciones ```htmlvalidate``` y ```build```:
+
+```json
+  "scripts": {
+    "parcel:dev": "parcel --hmr-port 33999 src/index.html",
+    "parcel:build": "parcel build src/index.html",
+    "clean": "rimraf dist .cache .cache-loader",
+    "dev": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean htmlvalidate parcel:build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "htmlvalidate": "node_modules/.bin/html-validate src/**/*.html"
+  },
+```
+
+Posteriormente a la validación del código HTML, usé la herramienta web [https://www.accessi.org](https://www.accessi.org) para validar el código de la página en cuanto a accesibilidad, y se presentaron unas advertenicas de alto impacto con la jerarquía de cabeceras. El validador indicaba que se estaban usando etiquetas ```<h2>``` sin tener ninguna de nivel superior por encima, por lo que para resolver este problema se modificaron los niveles de las etiquetas según se indicaba.
+
+En la página inicial también presenta una advertencia de medio impacto, indicando que la estructura de enlaces presente en la página se podría organizar con elementos ```<li>```, pero dado el aspecto de la página, he decidido dejar su estructura como se encuentra actualmente, ya que no es técnicamente un menú de navegación, es principalmente un elemento de presentación visual.
 
 # Enlaces
 
