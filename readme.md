@@ -1,7 +1,7 @@
 ---
 title: Memoria de desarrollo de la PEC2
 author: Damián Serrano Thode
-date: 16/04/2021
+date: 14/05/2021
 lang: es
 geometry: "a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm"
 mainfont: arev
